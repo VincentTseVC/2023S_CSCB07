@@ -43,8 +43,8 @@ public class Driver {
         String s1 = new String("CSCB07");
         String s2 = new String("CSCB07");
 
-        String s3 = "CSCB07"; // short-cut of creating a string, put in to 'String-pool'
-        String s4 = "CSCB07"; // java will first check 'String-pool', 沒有才create
+        String s3 = "CSCCSCB07B07"; // short-cut of creating a string, put in to 'String-pool'
+        String s4 = ""; // java will first check 'String-pool', 沒有才create
 
         // same object? same memory address?
         System.out.println(s1 == s2);
