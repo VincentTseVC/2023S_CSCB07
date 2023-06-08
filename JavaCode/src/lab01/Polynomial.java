@@ -1,3 +1,5 @@
+package lab01;
+
 public class Polynomial {
 
     double[] coefficients; // null
