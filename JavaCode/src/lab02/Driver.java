@@ -42,13 +42,7 @@ public class Driver {
             File file = new File("output.txt");
             Polynomial p3 = new Polynomial(file);
 
-            for (int i = 0; i < p3.coefficients.length; i++)
-                System.out.print(p3.coefficients[i] + " ");
-            System.out.println();
-
-            for (int i = 0; i < p3.exponents.length; i++)
-                System.out.print(p3.exponents[i] + " ");
-            System.out.println();
+            System.out.println(p3); // toString()
 
         } catch (IOException ex1) {
             // TODO:

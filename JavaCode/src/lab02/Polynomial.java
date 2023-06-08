@@ -187,5 +187,19 @@ public class Polynomial {
         return evaluate(x) == 0.0;
     }
 
+    public String toString() {
+        String res = "";
+        for (int i = 0; i < this.coefficients.length; i++) {
+            res += this.coefficients[i] + "x" + this.exponents[i] + "+";
+        }
+        res += "FUCK";
+
+        return res
+                .replace("+-", "-")     //
+                .replace("x0", "")      //
+                //.replace("x1", "x")     // TODO: 問一下 這個要不要加
+                .replace(".0", "")      //
+                .replace("+FUCK", "");  // to remove the last '+'
+    }
 
 }
